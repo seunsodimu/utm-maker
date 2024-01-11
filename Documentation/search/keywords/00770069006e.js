@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("win",["Variable"],[["window",,[["regular nodes (via `this","ownerDocument`), window",,"ownerdocument`),window",0,"File:vendor/jquery/jquery.js:regular_nodes(via`this.ownerDocument`),window"]]]]);

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>NextAfter UTM Maker</title>	
+
+		<meta name="keywords" content="" />
+		<meta name="description" content="">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="css/skins/default.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+			<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lc060wpAAAAAGgOKXYKu9FW_ny023IfZ9pvGqqF"></script>
+			
+	</head>
+	<body>
+
+		<div class="body">
+			<header id="header" class="header-transparent header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 70, 'stickyChangeLogo': false, 'stickyHeaderContainerHeight': 70}">
+				<div class="header-body border-top-0 bg-light box-shadow-none">
+					<div class="header-container container-fluid">
+						<div class="header-row p-relative px-0">
+							<div class="header-column px-lg-3">
+								<div class="header-row">
+									<div class="header-logo">
+										<a href="#"><img alt="UTM Maker" width="180" data-sticky-width="82" data-sticky-height="40" data-sticky-top="0" src="img/logo1.png"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+
+			
+
+				<div id="examples" class="container py-2 mt-5">
+
+					<div class="row mt-5">
+						<div class="col-lg-3 order-2 order-lg-1">
+							<aside class="sidebar mt-2">
+								<h5 class="font-weight-semi-bold"> </h5>
+								
+							</aside>
+						</div>
+						<div class="col-lg-9 order-1 order-lg-2">
+
+							<div class="tab-pane tab-pane-navigation active" id="formsStyleDefault">
+
+								<h4 class="mb-3">Accurately Measure Your Marketing Campaigns</h4>
+                                <p>Google Analytics has provided a useful mechanism for the accurate tracking of marketing campaigns. The only problem is it isn't the easiest to use and is VERY easy to make mistakes. This tool will help you accurately create trackable links to be used across all of your marketing channels.</p>
+								<div class="card mb-4">
+									<div class="card-body">
+										<div class="row">
+											<div class="col">
+											  	<form class="utm-form" method="POST" action="utmmaker.php">
+													<div class="contact-form-success alert alert-success d-none mt-4">
+														<strong>Success!</strong> Your link is ready. 
+													</div>
+
+													<div class="contact-form-error alert alert-danger d-none mt-4">
+														<strong>Error!</strong> There was an error creating your link, please try again.
+														<span class="mail-error-message text-1 d-block"></span>
+													</div>
+                                                    <div class="row">
+                                                        <h4>Create Your Perfectly Tracked URL</h4>
+                                                        <p>Get your custom marketing URL by entering the information below. Hover over the <a href="#" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="top" data-bs-original-title=""><i class="fa-solid fa-circle-info"></i></a>'s for additional guidance and examples on the purpose of each field.</p>
+                                                    </div>
+													<div class="row">
+														<div class="form-group col">
+															<label class="form-label mb-1 text-2">URL<sup><a href="#" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="top" data-bs-original-title=""><i class="fa-solid fa-circle-info"></i></a></sup></label>
+															<input type="text" value="" data-msg-required="Please enter the url for your campaign. e.g https://www.yoursite.com/your-page/" maxlength="100" class="form-control text-3 h-auto py-2" name="siteUrl" id="siteUrl" required>
+														</div>
+													</div>
+													<div class="row">
+														<div class="form-group col">
+															<label class="form-label mb-1 text-2">Campaign Name<sup><a href="#" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="top" data-bs-original-title="The name of individual marketing initiatives such as newsletter, year_end, etc."><i class="fa-solid fa-circle-info"></i></a></sup></label>
+															<input type="text" value="" data-msg-required="Please enter the name for your campaign." maxlength="100" class="form-control text-3 h-auto py-2" name="campaignName" id="campaignName" required>
+														</div>
+													</div>
+													<div class="row">
+														<div class="form-group col">
+															<label class="form-label">Source Platform<sup><a href="#" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="top" data-bs-original-title="The platform responsible for directing traffic to a given Analytics property"><i class="fa-solid fa-circle-info"></i></a></sup></label>
+															<div class="custom-select-1">
+													      		<select class="form-select form-control h-auto py-2" data-msg-required="Please select a source platform." name="sourcePlatform" id="sourcePlatform" required>
+													        		<option value="">Choose...</option>
+                                                            		<option value="facebook">Meta/Facebook</option>
+                                                            		<option value="google">Google Ads</option>
+                                                            		<option value="youtube">YouTube</option>
+                                                            		<option value="email">Email Marketing</option>
+													      		</select>
+													      	</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="form-group col">
+															<label class="form-label">Medium<sup><a href="#" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="top" data-bs-original-title="The channel of communication this link will be placed."><i class="fa-solid fa-circle-info"></i></a></sup></label>
+															<div class="custom-select-1">
+													      		<select class="form-select form-control h-auto py-2" data-msg-required="Please select a medium." name="campaignMedium" id="campaignMedium" required>
+													        		<option value="">Choose...</option>
+                                                            		<option value="display">Banners &amp; Display Ads</option>
+                                                            		<option value="email">Email</option>
+                                                            		<option value="organic social media">Organic Social Media</option>
+                                                            		<option value="paid search">Paid Search</option>
+                                                            		<option value="paid social">Paid Social</option>
+                                                            		<option value="cpc">CPC</option>
+                                                            		<option value="referral">Referral</option>
+													      		</select>
+													      	</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="form-group col">
+															<label class="form-label mb-1 text-2">Source<sup><a href="#" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="top" data-bs-original-title="The specific group that this will be targeting in the selected medium. Examples are housefile, facebook, etc."><i class="fa-solid fa-circle-info"></i></a></sup></label>
+															<input type="text" value="" data-msg-required="Please enter the source." class="form-control text-3 h-auto py-2" name="campaignSource" id="campaignSource" required>
+														</div>
+													</div>
+													<div class="row">
+														<div class="form-group col">
+															<label class="form-label mb-1 text-2">Content (Optional)<sup><a href="#" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="top" data-bs-original-title="If the source can be further subdivided, this field is used. Often this is used to track A/B test variants."><i class="fa-solid fa-circle-info"></i></a></sup></label>
+															<input type="text" value="" class="form-control text-3 h-auto py-2" name="campaignContent" id="campaignContent">
+														</div>
+													</div>
+													<div class="row">
+														<div class="form-group col">
+															<label class="form-label mb-1 text-2">Term (Optional)<sup><a href="#" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="top" data-bs-original-title="Used to manually identify paid keywords you're targeting with your campaign."><i class="fa-solid fa-circle-info"></i></a></sup></label>
+															<input type="text" value="" class="form-control text-3 h-auto py-2" name="campaignTerm" id="campaignTerm">
+														</div>
+													</div>
+													<div class="row">
+														<div class="form-group col">
+															<label class="form-label mb-1 text-2">ID (Optional)<sup><a href="#" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="top" data-bs-original-title="Used to identify a specific campaign or promotion."><i class="fa-solid fa-circle-info"></i></a></sup></label>
+															<input type="text" value="" class="form-control text-3 h-auto py-2" name="campaignId" id="campaignId">
+														</div>
+													</div>
+													<div class="row">
+                                                        <div class="form-group col">
+                                                          <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="Yes" name="isShorten" id="isShorten">
+                                                                <label class="form-check-label" for="isShorten">
+                                                                    Create a shortened URL
+                                                                </label>
+                                                             </div>
+                                                        </div>
+													</div>
+													<div class="row">
+														<div class="form-group col">
+															<input type="submit" value="Get Link" class="btn btn-primary g-recaptcha" data-loading-text="Loading...">
+															<!-- Clear form -->
+															<input type="reset" value="Clear" class="btn btn-light">
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- modal -->
+								<div class="modal fade" id="defaultModal" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h4 class="modal-title" id="defaultModalLabel">Your Generated Link</h4>
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+											</div>
+											<div class="modal-body">	
+								<div class="card mb-4 returnDiv">
+									<div class="card-body">
+										<div class="row">
+											<div class="col">
+												<textarea class="form-control returnUrl" id="returnUrl" rows="3" readonly></textarea>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+											<div class="modal-footer">
+												<button class="btn btn-warning" id="copyBtn"><i class="fa fa-copy"></i> Copy to Clipboard</button>
+												<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card mb-4 returnDiv" id="returnDiv" style="display: none;">
+									<div class="card-body">
+										<div class="row">
+											<div class="col">
+												<textarea class="form-control returnUrl" rows="3" readonly></textarea>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<footer id="footer" class="bg-color-dark-100 border border-end-0 border-start-0 border-bottom-0 border-color-light-3 mt-0">
+				<div class="container text-center my-3 py-5">
+					<p class="text-4 mb-4">UTMMaker is a project of <a href="https://www.nextafter.com/?__hstc=128809939.bd939c9dea040db3573a8c6981c6a35e.1704837808769.1704915167972.1704924751819.6&__hssc=128809939.2.1704924751819&__hsfp=3222052764" class="text-color-light" target="_blank">NextAfter.</a></p>
+                    <p class="text-4 mb-4">This is one of many available tools; <a href="https://www.nextafter.com/resources/?__hstc=128809939.bd939c9dea040db3573a8c6981c6a35e.1704837808769.1704915167972.1704924751819.6&__hssc=128809939.2.1704924751819&__hsfp=3222052764" class="text-color-light" target="_blank">you should check out some of the other free resources.</a></p>
+				</div>
+				<div class="copyright bg-color-dark-100 py-4">
+					<div class="container text-center py-2">
+						<p class="mb-0 text-2">© 2024. <a href="">Privacy Policy.</a> <a href="">Terms & Conditions</a></p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+        <!-- add jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Vendor -->
+		<script src="vendor/plugins/js/plugins.min.js"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="js/examples/examples.forms.js"></script>
+
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+        <script>
+            jQuery.noConflict();
+    jQuery(document).ready(function ($) {
+    // on source platform change populate medium and source
+    $('#sourcePlatform').change(function(){
+        var sourcePlatform = $(this).val();
+        var campaignMedium = $('#campaignMedium');
+        var campaignSource = $('#campaignSource');
+        
+        if(sourcePlatform == 'facebook'){
+            campaignMedium.val('paid social');
+            campaignSource.val('facebook');
+        } else if(sourcePlatform == 'google'){
+            campaignMedium.val('cpc');
+            campaignSource.val('google');
+        } else if(sourcePlatform == 'youtube'){
+            campaignMedium.val('cpc');
+            campaignSource.val('youtube');
+        } else if(sourcePlatform == 'email'){
+            campaignMedium.val('email');
+            campaignSource.val('prospecting');
+        }
+    });
+
+    // on medium change populate content
+    $('#campaignMedium').change(function(){
+        var campaignMedium = $(this).val();
+        var campaignContent = $('#campaignContent');
+
+
+        if(campaignMedium == 'display'){
+            // set content placeholder
+            campaignContent.attr('placeholder', 'Identify the message or theme to identify this ad');
+        } else if(campaignMedium == 'email'){
+            campaignContent.attr('placeholder', 'Use format {DATE}_{THEME}. Example: 2021-01-01_NewYear');
+        } else if(campaignMedium == 'organic social media'){
+            campaignContent.attr('placeholder', 'Use format {DATE}_{THEME}. Example: 2021-01-01_NewYear');
+        } else if(campaignMedium == 'paid search'){
+            campaignContent.attr('placeholder', 'Identify the message or theme to identify this ad');
+        } else if(campaignMedium == 'paid social'){
+            campaignContent.attr('placeholder', '{{ad.id}}_{{adset.name}}_{{ad.name}}');
+        } else {
+            campaignContent.attr('placeholder', '');
+        }
+    });
+                //  form submit
+				$('.utm-form').submit(function(e){
+					e.preventDefault();
+					$.ajax({
+						type: 'POST',
+						url: 'utmmaker.php',
+						data: $(this).serialize(),
+						dataType: 'json',
+						success: function (data) {
+							console.log(data);
+							if (data.message == "success") {
+								$('.contact-form-success').removeClass('d-none');
+								$('.contact-form-error').addClass('d-none');
+								$('.text-input, textarea').val('');
+								$('.returnUrl').val(data.endUrl);
+								$('#returnDiv').show();
+								$('#defaultModal').modal('show');
+							} else {
+								$('.contact-form-error').removeClass('d-none');
+								$('.contact-form-success').addClass('d-none');
+								if (data.error) {
+									$('.mail-error-message').html(data.error);
+								} else {
+									$('.mail-error-message').html('');
+								}
+							}
+						},
+						error: function (err) {
+							console.log(err);
+						}
+					});
+				});
+// copy to clipboard
+$('#copyBtn').click(function(){
+	var copyText = document.getElementById("returnUrl");
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	document.execCommand("copy");
+	alert("Copied the text: " + copyText.value);
+});
+
+ });
+           
+
+        </script>
+	</body>
+</html>

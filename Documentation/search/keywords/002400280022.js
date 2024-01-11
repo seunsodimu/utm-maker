@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("$(\"",["Variable"],[["$(&quot;&quot;),","$(\"\"),",[[,"$(&quot;&quot;), $(null), $(undefined), $",,"$(\"\"),$(null),$(undefined),$",0,"File:vendor/jquery/jquery.js:$(\"\"),$(null),$(undefined),$"]]]]);

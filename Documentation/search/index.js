@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixIndexLoaded(["$","$(\"","$(n","$(u","(ar","0;","[","]","alw","arg","arr","ass","be","eac","hea","htt","key","mus","of","own","pro","see","sta","tra","val","win","yie","{","}"]);
