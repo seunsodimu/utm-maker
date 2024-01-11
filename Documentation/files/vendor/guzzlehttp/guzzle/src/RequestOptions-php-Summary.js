@@ -1,1 +1,0 @@
-﻿NDFramePage.OnPageTitleLoaded("File:vendor/guzzlehttp/guzzle/src/RequestOptions.php","RequestOptions.php");NDSummary.OnSummaryLoaded("File:vendor/guzzlehttp/guzzle/src/RequestOptions.php",[["PHP","PHP"]],[["Files","File"]],[[1,0,0,"(array) Associative array of HTTP headers. Each value MUST be","(array)Associative_array_of_HTTP_headers.Each_value_MUST_be"]]);

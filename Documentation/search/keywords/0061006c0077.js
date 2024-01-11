@@ -1,1 +1,0 @@
-﻿NDSearch.OnPrefixDataLoaded("alw",["File"],[["always",,[[,"protocol always yields status 0; see trac-8605, trac-14207",,"protocol always yields status 0;see trac-8605,trac-14207",0,"File:vendor/jquery/jquery.js:protocol_always_yields_status_0_see_trac-8605,trac-14207"]]]]);

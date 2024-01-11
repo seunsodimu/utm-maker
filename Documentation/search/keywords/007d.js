@@ -1,1 +1,0 @@
-﻿NDSearch.OnPrefixDataLoaded("}",["Variable"],[["}",,[[,"[ owner, { properties } ] args",,"[owner,{properties}]args",0,"File:vendor/jquery/jquery.js:[owner,{properties}]args"]]]]);

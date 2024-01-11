@@ -43,7 +43,8 @@
 		<link rel="stylesheet" href="css/custom.css">
 
         <!-- Datatable -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+        
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
 	</head>
 	<body>
 
@@ -78,14 +79,15 @@
 
 							<div class="tab-pane tab-pane-navigation active" id="formsStyleDefault">
 
-								<h4 class="mb-3">Accurately Measure Your Marketing Campaigns</h4>
-                                <p>Google Analytics has provided a useful mechanism for the accurate tracking of marketing campaigns. The only problem is it isn't the easiest to use and is VERY easy to make mistakes. This tool will help you accurately create trackable links to be used across all of your marketing channels.</p>
+								<h4 class="mb-3">Entries</h4>
+                                
 								<div class="card mb-4">
 									<div class="card-body">
 										<div class="row">
 											<table id="entriesTable" class="display" style="width:100%">
                                                 <thead>
                                                     <tr>
+                                                        <th></th>
                                                         <th>Campaign Name</th>
                                                         <th>Source Platform</th>
                                                         <th>Medium</th>
@@ -120,7 +122,7 @@
 		</div>
 
         <!-- add jquery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 		<!-- Vendor -->
 		<script src="vendor/plugins/js/plugins.min.js"></script>
 
@@ -134,7 +136,7 @@
 		<script src="js/theme.init.js"></script>
 
         <!-- Datatable -->
-        <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
 
                                         
         <script>
@@ -142,14 +144,62 @@
                 $('#entriesTable').DataTable({
                     "ajax": 'fetch_data.php',
                     "columns": [
+                        {
+                        className: 'dt-control',
+                        orderable: false,
+                        data: null,
+                        defaultContent: ''
+                        },
                         { "data": "campaignName" },
                         { "data": "sourcePlatform" },
                         { "data": "campaignMedium" },
                         { "data": "campaignSource" },
                         { "data": "userLocation" },
                         { "data": "creationDate" }
-                    ]
+                    ],
+                    "order": [[1, 'asc']]
                 });
+
+                function format(d) {
+    // `d` is the original data object for the row
+    return (
+        '<dl>' +
+        '<dt>Site URL:</dt>' +
+        '<dd>' +
+        d.siteUrl +
+        '</dd>' +
+        '<dt>Content:</dt>' +
+        '<dd>' +
+        d.campaignContent +
+        '</dd>' +
+        '<dt>Term:</dt>' +
+        '<dd>' +
+        d.campaignTerm +
+        '</dd>' +
+        '<dt>Campaign Id:</dt>' +
+        '<dd>' +
+        d.campaignId +
+        '</dd>' +
+        '<dt>Generated Link:</dt>' +
+        '<dd>' +
+        d.endUrl +
+        '</dd>' +
+        '</dl>'
+    );
+}
+$('#entriesTable').on('click', 'td.dt-control', function (e) {
+    let tr = e.target.closest('tr');
+    let row = $('#entriesTable').DataTable().row(tr);
+ 
+    if (row.child.isShown()) {
+        // This row is already open - close it
+        row.child.hide();
+    }
+    else {
+        // Open this row
+        row.child(format(row.data())).show();
+    }
+});
             });
             </script>
         

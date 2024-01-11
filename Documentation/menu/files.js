@@ -1,1 +1,0 @@
-﻿NDMenu.OnSectionLoaded("files.js",[[2,["guzzlehttp","guzzle","src"],"File:vendor/guzzlehttp/guzzle/src/",[[1,"RequestOptions.php"]]],[2,"jquery","File:vendor/jquery/",[[1,"jquery.js"],[1,"jquery.slim.js"]]]]);
