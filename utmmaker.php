@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     $endUrl = urlencode($endUrl);
     // Prepare an SQL statement to prevent SQL injection
-    $stmt = $pdo->prepare("INSERT INTO utm_data (campaignName, sourcePlatform, campaignMedium, campaignSource, campaignTerm, campaingId, campaignContent, siteUrl, userIp, endUrl, userLocation) VALUES (:campaignName, :sourcePlatform, :campaignMedium, :campaignSource, :campaignTerm, :campaingId, :campaignContent, :siteUrl, :userIp, :endUrl, :userLocation)");
+    $stmt = $pdo->prepare("INSERT INTO utm_data (campaignName, sourcePlatform, campaignMedium, campaignSource, campaignTerm, campaignId, campaignContent, siteUrl, userIp, endUrl, userLocation) VALUES (:campaignName, :sourcePlatform, :campaignMedium, :campaignSource, :campaignTerm, :campaingId, :campaignContent, :siteUrl, :userIp, :endUrl, :userLocation)");
 
     // Bind parameters
     $stmt->bindParam(':campaignName', $data['campaignName']);
