@@ -67,7 +67,7 @@ $stmt->bindParam(':campaignMedium', $data['campaignMedium']);
 $stmt->bindParam(':campaignSource', $data['campaignSource']);
 $stmt->bindParam(':campaignTerm', $data['campaignTerm']);
 $stmt->bindParam(':campaignContent', $data['campaignContent']);
-$stmt->bindParam(':campaingId', $data['campaingId']);
+$stmt->bindParam(':campaignId', $data['campaignId']);
 $stmt->bindParam(':siteUrl', $data['siteUrl']);
 $stmt->bindParam(':userIp', $ip);
 $stmt->bindParam(':userLocation', $location);
