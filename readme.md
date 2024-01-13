@@ -25,7 +25,7 @@ Please ensure that you have the following installed on your system:
 The index.html file in the root directory displays the form to accept user input. The entries.html file displays the inputs. Clicking on the arrows in the first column of each entry row displays more information.
 
 ## Working Example
-Form - https://nextafter.azurewebsites.net
-Entries - https://nextafter.azurewebsites.net/entries.html
+- Form - https://nextafter.azurewebsites.net
+- Entries - https://nextafter.azurewebsites.net/entries.html
 ---
 
